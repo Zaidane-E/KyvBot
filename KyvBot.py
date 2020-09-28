@@ -1,5 +1,6 @@
 import discord
 import pytz
+import config as cfg
 from datetime import datetime, timezone, timedelta
 
 client = discord.Client()
@@ -61,4 +62,4 @@ async def on_message(message):
 	func = switcher.get(msg, ".invalid")
 	await func(message)
 
-client.run('MzU2MDk5MjIyMTYyMTEyNTIy.WbQJPg.wXlXs607AU41KjcwLws2rEMgtEw')
+client.login(cfg.token)
