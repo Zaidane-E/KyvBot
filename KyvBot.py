@@ -1,6 +1,4 @@
-import discord
-import pytz
-import config
+import discord, pytz, config
 from datetime import datetime, timezone, timedelta
 
 client = discord.Client()
@@ -14,7 +12,7 @@ async def invalid(message):
 	return
 
 async def print_help(message):
-	await message.channel.send('Commands:\n.help : helps...?\ntimefrance : time in france\ntimecanada: time in canada\ntime : time wherever u are\nschedule: stalk schedule')
+	await message.channel.send('`Commands:\nprefix: .\nhelp : Help\ntimefrance : Local time in Paris France\ntimecanada: Local time in Toronto Canada\ntime : Local time\nschedule: Schedule`')
 
 async def print_schedule(message):
 	await message.channel.send(file=discord.File('schedule_zaidane.png'))
