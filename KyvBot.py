@@ -12,7 +12,7 @@ async def invalid(message):
 	return
 
 async def print_help(message):
-	await message.channel.send('`Basic commands:\n\nprefix: .\nhelp : Help\ntimefrance : Local time in Paris France\ntimecanada: Local time in Toronto Canada\ntime : Local time\nschedule: Schedule`')
+	await message.channel.send('`Basic commands:\n\nprefix: .\nhelp : Help\ntimefrance : Local time in Paris, France\ntimecanada: Local time in Toronto, Canada\ntime : Local time\nschedule: Schedule`')
 
 async def print_schedule(message):
 	await message.channel.send(file=discord.File('schedule_zaidane.png'))
